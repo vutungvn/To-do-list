@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 03 - Css Selector</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <style>
+      /* p {
+        color: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1 id="title">This is title</h1>
+    <h2>This is h2 tag</h2>
+    <p class="paragraph">This is a paragraph 1</p>
+
+    <span>This is span tag 1</span>
+    <br />
+    <span>This is span tag 2</span>
+
+    <section>
+      <h2>CSS specificity</h2>
+
+      <div>
+        <p id="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          eligendi odit autem molestiae soluta explicabo perferendis, maxime,
+          pariatur laboriosam ad optio ullam! Esse illum id reiciendis enim
+          molestiae, quisquam vero.
+        </p>
+      </div>
+
+      <div class="parent" id="parent">
+        <p id="childrent" class="childrent">paragraph</p>
+      </div>
+
+      <div class="parent-2">
+        <p class="text">Danh sách sản phẩm</p>
+
+        <div>
+          <p class="text">Eletronic</p>
+        </div>
+        <div>
+          <p class="text">Clothes</p>
+        </div>
+      </div>
+
+      <div class="parent-3">
+        <p>This is p tag 1</p>
+        <p>This is p tag 2</p>
+        <div>This is div tag</div>
+        <p>This is p tag 3</p>
+        <div>
+          <p>This is p tag 4</p>
+          <p>This is p tag 5</p>
+          <div>This is div tag</div>
+          <p>This is p tag 6</p>
+          <p>This is p tag 7</p>
+        </div>
+      </div>
+
+      <ul>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Apple</li>
+        <li>Orange</li>
+      </ul>
+
+      <button type="button">Click me</button>
+    </section>
+  </body>
+</html>

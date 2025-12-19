@@ -1,0 +1,79 @@
+/* Element selector */
+h2 {
+  /* color: green; */
+}
+
+/* Id selector */
+#title {
+  color: red;
+}
+
+/* Class selector */
+.paragraph {
+  /* color: blue; */
+}
+
+/* Độ ưu tiên */
+span {
+  color: red;
+}
+
+span {
+  color: blue;
+}
+
+#text {
+  color: red;
+}
+
+.text {
+  /* color: blue; */
+}
+
+p {
+  /* color: green; */
+}
+
+/* Kết hợp Selector */
+#childrent {
+  color: purple;
+}
+
+.parent .childrent {
+  color: blue;
+}
+
+.parent .childrent {
+  color: red;
+}
+
+.parent-2 > .text {
+  color: green;
+}
+
+.text {
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.parent-3 p + p {
+  color: red;
+}
+
+ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: green;
+}
+
+ul li:nth-child(2) {
+  color: blue;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+}

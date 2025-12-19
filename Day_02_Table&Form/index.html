@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 02: Table & Form</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <main>
+        <section>
+          <h2>Student List</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Thanh Tùng</td>
+                <td>tungvuvanthanh@gmail.com</td>
+                <td>0376734165</td>
+                <td>Hưng Yên</td>
+              </tr>
+              <tr>
+                <td>Thanh Tùng</td>
+                <td>tungvuvanthanh@gmail.com</td>
+                <td>0376734165</td>
+                <td>Hưng Yên</td>
+              </tr>
+              <tr>
+                <td>Thanh Tùng</td>
+                <td>tungvuvanthanh@gmail.com</td>
+                <td>0376734165</td>
+                <td>Hưng Yên</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+
+        <section>
+          <h2>Colspan</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td colspan="2">13</td>
+                <td>14</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Example</h2>
+
+          <table>
+            <caption>
+              Invoice
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Item/Desc.</th>
+                <th>Qty.</th>
+                <th>@</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Paperclips (Box)</td>
+                <td>100</td>
+                <td>1.15</td>
+                <td>115.00</td>
+              </tr>
+              <tr>
+                <td>Paper (Case)</td>
+                <td>10</td>
+                <td>45.99</td>
+                <td>459.90</td>
+              </tr>
+              <tr>
+                <td>Wasterpaper Baskets</td>
+                <td>2</td>
+                <td>17.99</td>
+                <td>35.98</td>
+              </tr>
+              <tr>
+                <td colspan="3" style="font-weight: bold">Subtotal</td>
+                <td>610.88</td>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-weight: bold">Tax</td>
+                <td>7%</td>
+                <td>42.76</td>
+              </tr>
+              <tr>
+                <td colspan="3" style="font-weight: bold">Total</td>
+                <td>653.64</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Rowspan</h2>
+
+          <table>
+            <thead>
+              <th></th>
+              <th></th>
+              <th>Bob</th>
+              <th>Alice</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td rowspan="2" style="font-weight: bold">Favorite</td>
+                <td style="font-weight: bold">Color</td>
+                <td rowspan="3">Blue</td>
+                <td>Purple</td>
+              </tr>
+              <tr>
+                <td rowspan="2" style="font-weight: bold">Flavor</td>
+                <td>Banana</td>
+              </tr>
+              <tr>
+                <td rowspan="2" style="font-weight: bold">Least Favorite</td>
+                <td>Yellow</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">Flavor</td>
+                <td>Mint</td>
+                <td>Walnut</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Rowspan & Colspan</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Stt</th>
+                <th rowspan="2">Tên sản phẩm</th>
+                <th colspan="2">Thông tin</th>
+                <th rowspan="2">Hãng</th>
+                <th rowspan="2">Giá</th>
+                <th rowspan="2">Trạng Thái</th>
+              </tr>
+              <tr>
+                <th>Màu sắc</th>
+                <th>Cân nặng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Dell 6450</td>
+                <td>Màu trắng</td>
+                <td>1kg</td>
+                <td>Dell</td>
+                <td>5.000.000</td>
+                <td>Hết hàng</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>HP 450g3</td>
+                <td>Màu đỏ</td>
+                <td>1kg</td>
+                <td>HP</td>
+                <td>5.000.000</td>
+                <td>Còn hàng</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lenovo</td>
+                <td>Màu đen</td>
+                <td>Lenovo</td>
+                <td>Dell</td>
+                <td>5.000.000</td>
+                <td>Hết hàng</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Form</h2>
+
+          <form>
+            <div>
+              <label for="username">Username</label>
+              <input
+                type="text"
+                placeholder="Enter your name..."
+                id="username"
+                name="username"
+              />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="userid">User Id</label>
+              <input type="number" id="userid" name="userid" />
+            </div>
+
+            <div>
+              <label for="comment">Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="checkbox">Checkbox</label>
+              <input type="checkbox" name="checkbox" id="checkbox" checked />
+            </div>
+
+            <!-- <div>
+              <span>Giới tính:</span>
+              <label for="male">Nam</label>
+              <input type="radio" id="male" name="gender" checked />
+              <label for="female">Nữ</label>
+              <input type="radio" id="female" name="gender" />
+            </div> -->
+
+            <div>
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+
+            <div>
+              <label for="job">Chọn nghề nghiệp:</label>
+              <select name="job" id="job">
+                <option value="teacher">Giáo viên</option>
+                <option value="docter" selected>Bác sĩ</option>
+                <option value="engineer">Kĩ sư</option>
+              </select>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+
+        <section>
+          <h2>Đăng Ký Tham Gia</h2>
+
+          <form>
+            <div>
+              <label for="fullname">Họ Tên:</label>
+              <input type="text" id="fullname" name="fullname" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="phone">Số điện thoại:</label>
+              <input type="number" id="phone" name="phone" />
+            </div>
+            <br />
+            <div>
+              <label for="gender">Giới tính:</label>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Nam</label>
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Nữ</label>
+            </div>
+            <br />
+            <div>
+              <label for="country">Quốc gia:</label>
+              <select name="country" id="country">
+                <option selected>Chọn quốc gia</option>
+                <option value="HN">Hà nội</option>
+                <option value="HP">Hải Phòng</option>
+                <option value="HD">Hải Dương</option>
+              </select>
+            </div>
+            <br />
+            <div>
+              <input type="checkbox" id="agreement" name="agreement" />
+              <label for="agreement">Đăng ký nhận bản tin</label>
+            </div>
+            <br />
+            <button type="submit">Gửi</button>
+          </form>
+
+          <div>
+            <h3>Danh sách đăng ký</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Họ tên</th>
+                  <th>Email</th>
+                  <th>Số điện thoại</th>
+                  <th>Giới tính</th>
+                  <th>Quốc gia</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Nguyễn Văn A</td>
+                  <td>a@example.com</td>
+                  <td>0123456789</td>
+                  <td>Nam</td>
+                  <td>Việt Nam</td>
+                </tr>
+                <tr>
+                  <td>Nguyễn Văn B</td>
+                  <td>b@example.com</td>
+                  <td>0123456789</td>
+                  <td>Nữ</td>
+                  <td>Mỹ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
