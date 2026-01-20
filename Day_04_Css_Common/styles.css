@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  color: white;
+  background-color: red;
+
+  /* Margin */
+  margin: 20px;
+  /* margin: 0 auto; */
+
+  /* Padding */
+  padding: 20px;
+  /* padding: 10px 20px; */
+  /* padding: 10px 20px 30px 40px; */
+  /* padding: 10px 20px 15px; */
+
+  /* border */
+  /* border: 5px solid black; */
+}
+
+/* Font */
+.paragraph {
+  color: blue;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Css Position */
+.box2 {
+  /* position: static; */
+  width: 200px;
+  height: 200px;
+  color: white;
+  background-color: green;
+  position: relative;
+}
+
+.children {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header {
+  width: 100%;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 30px 10px;
+  color: white;
+  background-color: violet;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+/* Flex box */
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+.creator-list {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* gap: 30px; */
+  /* margin: 0 -15px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.creator-item {
+  /* width: calc((100% - 90px) / 4); */
+  /* width: 25%; */
+  /* padding: 15px; */
+}
+
+.creator-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+.creator-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  padding: 4px 10px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+}
+
+.creator-number {
+  color: #858584;
+}
+
+.creator-info {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.creator-sales {
+  margin-top: 5px;
+}
+
+.creator-sales-title {
+  color: #858584;
+}
