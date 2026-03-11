@@ -22,12 +22,24 @@ console.log("PI::", PI);
 // Scope
 
 // Global Scope (Toàn cục)
-let globalVar = "Biến toàn cục";
+// let globalVar = "Biến toàn cục";
 
-function myFunction() {
-  console.log(globalVar);
-}
-
-myFunction();
+// function myFunction() {
+//   console.log(globalVar);
+// }
 
 // Function Scope (Phạm vi hàm)
+// function myFunction() {
+//   let functionVar = "Biến trong hàm";
+//   console.log(functionVar);
+// }
+
+// myFunction();
+
+// console.log(functionVar);
+
+// Block Scope (Phạm vi khối)
+if (true) {
+  let blockVar = "Biến trong khối";
+  console.log(blockVar);
+}
