@@ -1,0 +1,33 @@
+// Variables
+
+// var, let, const
+
+// Declare
+// ES5
+// var
+console.log("a::", a);
+var a = 10;
+a = 20;
+
+// ES6
+// let
+let color = "red";
+color = "blue";
+console.log("color::", color);
+
+// const
+const PI = 3.14;
+console.log("PI::", PI);
+
+// Scope
+
+// Global Scope (Toàn cục)
+let globalVar = "Biến toàn cục";
+
+function myFunction() {
+  console.log(globalVar);
+}
+
+myFunction();
+
+// Function Scope (Phạm vi hàm)
