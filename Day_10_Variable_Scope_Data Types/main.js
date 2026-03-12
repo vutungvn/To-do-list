@@ -5,9 +5,9 @@
 // Declare
 // ES5
 // var
-console.log("a::", a);
-var a = 10;
-a = 20;
+// console.log("a::", a);
+// var a = 10;
+// a = 20;
 
 // ES6
 // let
@@ -43,3 +43,24 @@ if (true) {
   let blockVar = "Biến trong khối";
   console.log(blockVar);
 }
+
+// Hoisting
+// console.log("a::", a);
+// var a = 10;
+
+// console.log("b::", b);
+// let b = 20;
+// console.log("b::", b);
+
+// Example
+// function myFunction() {
+//   console.log(number);
+//   if (1 == 2) {
+//     var number = 10;
+//   }
+//   console.log(number);
+// }
+
+// myFunction();
+
+// console.log(number);
