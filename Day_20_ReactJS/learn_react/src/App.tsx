@@ -1,10 +1,15 @@
 import "./App.css";
-import CardMusic from "./components/CardMusic";
+import { Footer } from "./ui/Footer";
+import { Header } from "./ui/Header";
+import { Main } from "./ui/Main/main";
 
 function App() {
   return (
     <>
-      <CardMusic />
+      {/* <CardMusic /> */}
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }
