@@ -1,7 +1,10 @@
 import "./App.css";
+import { Counter } from "./components/Counter";
+import { FormDemo } from "./components/FormDemo";
 import { MyButton } from "./components/MyButton";
 import { MyButton1 } from "./components/MyButton1";
 import { MyInput } from "./components/MyInput";
+import { SideBar } from "./components/SideBar";
 import { UserCard } from "./components/UserCard";
 
 function App() {
@@ -38,8 +41,8 @@ function App() {
 
   return (
     <>
-      {/* <h1 className="text-red-500">Danh sách User</h1> */}
-      {/* <UserCard
+      {/* <h1 className="text-red-500">Danh sách User</h1>
+      <UserCard
         name="A"
         avatar="https://lh3.googleusercontent.com/ogw/AF2bZyjJCNLwY0j85sdk6x_cb9rUhgcrw5pL_RnremdpSHQ-0_k=s64-c-mo"
       />
@@ -47,11 +50,11 @@ function App() {
         name="B"
         avatar="https://lh3.googleusercontent.com/ogw/AF2bZyjJCNLwY0j85sdk6x_cb9rUhgcrw5pL_RnremdpSHQ-0_k=s64-c-mo"
       />
-      <UserCard name="C" /> */}
+      <UserCard name="C" />
 
-      {/* {users.map((user) => (
+      {users.map((user) => (
         <UserCard key={user.name} item={user} />
-      ))} */}
+      ))}
 
       <div className="flex gap-3">
         <MyButton title="Mua hàng" variant="blue" onClick={handleAddToCart} />
@@ -78,6 +81,24 @@ function App() {
         <MyButton1 variant="green" onClick={handleRegister}>
           Đăng ký
         </MyButton1>
+      </div> */}
+      <div>
+        <Counter />
+      </div>
+      <br />
+      <hr />
+      <br />
+
+      <div>
+        <SideBar />
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <div>
+        <FormDemo />
       </div>
     </>
   );
