@@ -98,18 +98,70 @@ console.log(newPerson);
 // });
 
 // map()
-const numbers = [1, 2, 3];
 
-Array.prototype.myMap = function (callback) {
-  let result = [];
+// Array.prototype.myMap = function (callback) {
+//   let result = [];
 
-  for (let i = 0; i < this.length; i++) {
-    result.push(callback(this[i], i, this));
-  }
+//   for (let i = 0; i < this.length; i++) {
+//     result.push(callback(this[i], i, this));
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-const newNumbers = numbers.myMap((number) => number * 2);
-console.log(newNumbers);
-console.log(numbers);
+// const newNumbers = numbers.myMap((number) => number * 2);
+// console.log(newNumbers);
+// console.log(numbers);
+
+// some()
+// const numbers = [1, 2, 0];
+
+// Array.prototype.mySome = function (callback) {
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i, this)) {
+//       return true;
+//     }
+//   }
+//   return false;
+// };
+
+// const result = numbers.mySome((number) => number > 2);
+// console.log(result);
+
+// every()
+
+// Array.prototype.myEvery = function (callback) {
+//   for (let i = 0; i < this.length; i++) {
+//     if (!callback(this[i], i, this)) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// const result = numbers.every((number) => number > 0);
+// console.log(result);
+
+// filter()
+
+// Array.prototype.myFilter = function (callback) {
+//   let result = [];
+
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i, this)) {
+//       result.push(this[i]);
+//     }
+//   }
+
+//   return result;
+// };
+
+// const evenNumbers = numbers.myFilter((number) => number % 2 === 0);
+// console.log(evenNumbers);
+
+// reduce()
+
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((acc, number) => acc + number, 0);
+console.log(sum);
