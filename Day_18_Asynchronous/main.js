@@ -138,15 +138,37 @@
 
 // Async/Await
 
-const fetchData = async () => {
-  try {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const data = await res.json();
+// const fetchData = async () => {
+//   try {
+//     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const data = await res.json();
 
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-};
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
-fetchData();
+// fetchData();
+
+// Callback
+// function taskA(callback) {
+//   setTimeout(() => {
+//     callback(10);
+//   }, 2000);
+// }
+
+// function taskB(callback) {
+//   setTimeout(() => {
+//     callback();
+//   }, 1000);
+// }
+
+// taskA(function (data) {
+//   console.log(data);
+
+//   taskB(function () {
+//     let num = 20;
+//     console.log(data + num);
+//   });
+// });
