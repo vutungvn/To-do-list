@@ -172,3 +172,30 @@
 //     console.log(data + num);
 //   });
 // });
+
+// Xhr
+
+function getData(callback) {
+  // Khởi tạo 1 đối tượng xhr
+  const xhr = new XMLHttpRequest();
+
+  // Mở 1 request
+  xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        const data = JSON.parse(xhr.responseText);
+        callback(data);
+      } else {
+        callback("Lỗi::" + xhr.status);
+      }
+    }
+  };
+
+  xhr.send();
+}
+
+getData(function (data) {
+  console.log(data);
+});
