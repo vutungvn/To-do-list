@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "../layout/Layout";
 import { UseEffect } from "../page/useEffect/UseEffect";
 import { ProductDetail } from "../page/useEffect/ProductDetail";
+import { UseReducer } from "../page/useReducer/UseReducer";
+import { Cart } from "../page/carts/Cart";
 
 export const AppRouter = () => {
   return (
@@ -12,7 +14,8 @@ export const AppRouter = () => {
           <Route path="/" element={<h1>Dashboard</h1>} />
           <Route path="/useEffect" element={<UseEffect />} />
           <Route path="/product/:id" element={<ProductDetail />} />
-          <Route path="/useReducer" element={<h1>UseReducer</h1>} />
+          <Route path="/useReducer" element={<UseReducer />} />
+          <Route path="/carts" element={<Cart />} />
         </Route>
       </Routes>
     </BrowserRouter>

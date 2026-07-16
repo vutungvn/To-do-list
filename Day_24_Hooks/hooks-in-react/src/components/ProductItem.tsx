@@ -1,6 +1,6 @@
 import React from "react";
-import type { Product } from "../types/Product.type";
 import { Link } from "react-router-dom";
+import type { Product } from "../types/product.type";
 
 export const ProductItem = ({ product }: { product: Product }) => {
   return (

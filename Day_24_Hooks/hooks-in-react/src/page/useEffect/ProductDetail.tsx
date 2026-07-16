@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import type { Product } from "../../types/Product.type";
+import type { Product } from "../../types/product.type";
 import { getProductById } from "../../api/product.api";
 
 export const ProductDetail = () => {

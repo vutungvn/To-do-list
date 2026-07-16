@@ -5,6 +5,7 @@ const menu = [
   { path: "/", label: "Dashboard" },
   { path: "/useEffect", label: "UseEffect" },
   { path: "/useReducer", label: "UseReducer" },
+  { path: "/carts", label: "Carts" },
 ];
 
 export default function Sidebar() {
