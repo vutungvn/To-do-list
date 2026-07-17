@@ -45,12 +45,28 @@ export const Cart = () => {
     setIsShowDetail(true);
   };
 
+  const handleIncrement = (id: number) => {
+    dispatchDetailCart({
+      type: "INCREMENT_QUANTITY",
+      payload: id,
+    });
+  };
+
+  const handleDecrement = (id: number) => {
+    dispatchDetailCart({
+      type: "DECREMENT_QUANTITY",
+      payload: id,
+    });
+  };
+
   return (
     <div>
       {isShowDetail ? (
         <Product
           onBack={() => setIsShowDetail(false)}
           productState={productState}
+          handleIncrement={handleIncrement}
+          handleDecrement={handleDecrement}
         />
       ) : (
         <>

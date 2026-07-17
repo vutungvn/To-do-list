@@ -4,12 +4,19 @@ import type { ProductState } from "../../types/cart.types";
 type ProductDetailProps = {
   onBack: () => void;
   productState: ProductState;
+  handleIncrement: (id: number) => void;
+  handleDecrement: (id: number) => void;
 };
 
-export const Product = ({ onBack, productState }: ProductDetailProps) => {
+export const Product = ({
+  onBack,
+  productState,
+  handleIncrement,
+  handleDecrement,
+}: ProductDetailProps) => {
   console.log("productState::", productState);
 
-  const { products, total } = productState;
+  const { products } = productState;
 
   return (
     <div className="max-w-4xl mx-auto p-6">
@@ -42,7 +49,11 @@ export const Product = ({ onBack, productState }: ProductDetailProps) => {
                 <h3 className="text-lg font-semibold">{product.title}</h3>
                 <p className="text-gray-500">Đơn giá: ${product.price}</p>
                 <div className="flex items-center gap-3 mt-2">
-                  <button className="w-8 h-8 flex items-center justify-center rounded-md bg-red-500 hover:bg-red-600 text-white font-bold transition">
+                  <button
+                    disabled={product.quantity === 1}
+                    onClick={() => handleDecrement(product.id)}
+                    className="w-8 h-8 flex items-center justify-center rounded-md bg-red-500 hover:bg-red-600 text-white font-bold transition"
+                  >
                     -
                   </button>
 
@@ -50,7 +61,10 @@ export const Product = ({ onBack, productState }: ProductDetailProps) => {
                     {product.quantity}
                   </span>
 
-                  <button className="w-8 h-8 flex items-center justify-center rounded-md bg-green-500 hover:bg-green-600 text-white font-bold transition">
+                  <button
+                    onClick={() => handleIncrement(product.id)}
+                    className="w-8 h-8 flex items-center justify-center rounded-md bg-green-500 hover:bg-green-600 text-white font-bold transition"
+                  >
                     +
                   </button>
                 </div>
@@ -60,7 +74,7 @@ export const Product = ({ onBack, productState }: ProductDetailProps) => {
             {/* Thành tiền */}
             <div className="text-right">
               <p className="text-xl font-bold text-blue-600">
-                ${product.total.toFixed(2)}
+                ${(product.price * product.quantity).toFixed(2)}
               </p>
             </div>
           </div>
@@ -71,7 +85,13 @@ export const Product = ({ onBack, productState }: ProductDetailProps) => {
       <div className="mt-8 border-t pt-4 flex justify-between items-center">
         <span className="text-xl font-bold">Tổng tiền:</span>
         <span className="text-2xl font-bold text-red-600">
-          ${total.toFixed(2)}
+          $
+          {productState.products
+            .reduce((acc, item) => {
+              acc += item.price * item.quantity;
+              return acc;
+            }, 0)
+            .toFixed(2)}
         </span>
       </div>
     </div>
