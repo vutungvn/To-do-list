@@ -6,6 +6,7 @@ const menu = [
   { path: "/useEffect", label: "UseEffect" },
   { path: "/useReducer", label: "UseReducer" },
   { path: "/carts", label: "Carts" },
+  { path: "/react-memo", label: "React.Memo" },
 ];
 
 export default function Sidebar() {

@@ -5,6 +5,7 @@ import { UseEffect } from "../page/useEffect/UseEffect";
 import { ProductDetail } from "../page/useEffect/ProductDetail";
 import { UseReducer } from "../page/useReducer/UseReducer";
 import { Cart } from "../page/carts/Cart";
+import { ReactMemo } from "../page/reactMemo/ReactMemo";
 
 export const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ export const AppRouter = () => {
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/useReducer" element={<UseReducer />} />
           <Route path="/carts" element={<Cart />} />
+          <Route path="/react-memo" element={<ReactMemo />} />
         </Route>
       </Routes>
     </BrowserRouter>
