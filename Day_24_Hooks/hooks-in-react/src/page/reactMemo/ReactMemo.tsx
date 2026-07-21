@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Child = React.memo(({ filter }: { filter: { query: string } }) => {
-  console.log("render");
+  // console.log("render");
   return <></>;
 });
 
