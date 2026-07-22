@@ -5,3 +5,9 @@ input {
   padding: 5px;
   border-radius: 5px;
 }
+
+button {
+  border: 2px solid #777;
+  padding: 10px 20px;
+  border-radius: 10px;
+}

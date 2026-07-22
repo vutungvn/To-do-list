@@ -7,6 +7,7 @@ import { UseReducer } from "../page/useReducer/UseReducer";
 import { Cart } from "../page/carts/Cart";
 import { ReactMemo } from "../page/reactMemo/ReactMemo";
 import { UseMemo } from "../page/useMemo/UseMemo";
+import { UseCallback } from "../page/useCallback/UseCallback";
 
 export const AppRouter = () => {
   return (
@@ -20,6 +21,7 @@ export const AppRouter = () => {
           <Route path="/carts" element={<Cart />} />
           <Route path="/react-memo" element={<ReactMemo />} />
           <Route path="/useMemo" element={<UseMemo />} />
+          <Route path="/useCallback" element={<UseCallback />} />
         </Route>
       </Routes>
     </BrowserRouter>
