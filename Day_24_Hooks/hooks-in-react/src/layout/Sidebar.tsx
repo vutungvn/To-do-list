@@ -9,6 +9,7 @@ const menu = [
   { path: "/react-memo", label: "React.Memo" },
   { path: "/useMemo", label: "UseMemo" },
   { path: "/useCallback", label: "UseCallback" },
+  { path: "/useRef", label: "UseRef" },
 ];
 
 export default function Sidebar() {
