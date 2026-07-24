@@ -10,6 +10,7 @@ const menu = [
   { path: "/useMemo", label: "UseMemo" },
   { path: "/useCallback", label: "UseCallback" },
   { path: "/useRef", label: "UseRef" },
+  { path: "/counter", label: "Counter" },
 ];
 
 export default function Sidebar() {

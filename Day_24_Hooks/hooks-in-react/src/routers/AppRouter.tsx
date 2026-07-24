@@ -9,6 +9,7 @@ import { ReactMemo } from "../page/reactMemo/ReactMemo";
 import { UseMemo } from "../page/useMemo/UseMemo";
 import { UseCallback } from "../page/useCallback/UseCallback";
 import { UseRef } from "../page/useRef/UseRef";
+import { DemoCounter } from "../page/counter/DemoCounter";
 
 export const AppRouter = () => {
   return (
@@ -24,6 +25,7 @@ export const AppRouter = () => {
           <Route path="/useMemo" element={<UseMemo />} />
           <Route path="/useCallback" element={<UseCallback />} />
           <Route path="/useRef" element={<UseRef />} />
+          <Route path="/counter" element={<DemoCounter />} />
         </Route>
       </Routes>
     </BrowserRouter>
